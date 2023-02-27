@@ -1,4 +1,100 @@
-h1{
-    text-align: center;
-    color: orange ;
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+}
+.main a{
+    color: black;
+    font-size: 1.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    list-style: none;
+    /*z-index: 100; */
+}
+
+.navbar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    color: black;
+}
+
+.responsive{
+    display: none;
+    cursor: pointer;
+}
+
+.responsive div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        position: fixed;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: orange;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    navbar li{
+        opacity: 0;
+    }
+
+    .responsive{
+        display: block;
+    }
+}
+.navbar {
+    transform: translateX(0%);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .toggle .abc1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .toggle .abc2 {
+    opacity: 0;
+  }
+  
+  .toggle .abc3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
