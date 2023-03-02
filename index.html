@@ -5,25 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solar Energy Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <div class="main">
-        <a href="#">Solar-Energy Calculator</a>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">Praveen</a></div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+        </ul>
+        <a href="#" class="calculator_btn">Calculator</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-      <ul class="navbar">
+      <div class="dropdown_menu">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Calculator</a></li>
-        <li><a href="#">Solar</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-      <div class="responsive">
-        <div class="abc1"></div>
-        <div class="abc2"></div>
-        <div class="abc3"></div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="calculator_btn">Calculator</a></li>
       </div>
-    </nav>
-    <img src="Images/solar1.jpeg" />
+    </header>
+    <script>
+      const togglebtn = document.querySelector(".toggle_btn");
+      const togglebtnIcon = document.querySelector(".toggle_btn i");
+      const dropdownMenu = document.querySelector(".dropdown_menu");
+
+      togglebtn.onclick = function () {
+        dropdownMenu.classList.toggle("open");
+        const isOpen = dropdownMenu.classList.contains("open");
+
+        togglebtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
   </body>
 </html>
