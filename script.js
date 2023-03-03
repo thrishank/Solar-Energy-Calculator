@@ -1,12 +1,12 @@
-const togglebtn = document.querySelector(".toggle_btn");
-const togglebtnIcon = document.querySelector(".toggle_btn i");
-const dropdownMenu = document.querySelector(".dropdown_menu");
+const menu = document.getElementsByClassName("dropdown_menu");
+const bars = document.getElementsByTagName("i");
 
-togglebtn.addEventListener = function () {
-    dropdownMenu.classList.toggle("open");
-    const isOpen = dropdownMenu.classList.contains("open");
-
-    togglebtnIcon.classList = isOpen
-        ? "fa-solid fa-xmark"
-        : "fa-solid fa-bars";
-};
+for (let i = 0; i < bars.length; i++) {
+  bars[i].addEventListener("click", function() {
+    if (menu[0].style.display === "block") {
+        menu[0].style.display = "none";
+      } else {
+        menu[0].style.display = "block";
+      }
+  });
+}
