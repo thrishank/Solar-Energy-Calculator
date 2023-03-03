@@ -9,11 +9,12 @@ body{
   /* margin: 0rem 2rem; */
   /* padding: 0; */
   /* background: url('WhatsApp\ Image\ 2023-03-02\ at\ 12.09.24\ AM.jpeg'); */
-  color: black;
+  /* color: rgba(29, 24, 24, 0.779); */
+  color:black;
   background-size:cover;
   background-repeat: no-repeat;
   /* background-position-y: 100%; */
-  background-color: rgba(16,81,87,255);
+  /* background-color: rgba(16,81,87,255); */
   font-family:sans-serif;
   
 }
@@ -45,9 +46,9 @@ body{
 .backgroundimg{
   width: 100%;
   max-width: 1000rem;
-  position: absolute;
+  /* position: absolute;
   top: 0px;
-  z-index: -1;
+  z-index: -1; */
 }
 .backgroundimg img{
   height: auto;
@@ -63,8 +64,9 @@ body{
   /* border: 2px solid red; */
   padding: 1rem;
   align-items: center;
-  /* background-color: rgb(248, 240, 225); */
+  background-color:rgba(0,0,0,0.5);
   position: -webkit-sticky;
+  backdrop-filter: blur(15px);
   
 }
 .quote{
