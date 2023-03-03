@@ -125,11 +125,14 @@ body{
   top: 60px;
   /* height: 0; */
   width: 300px;
-  background: rgba(173, 79, 79, 0.1);
-  backdrop-filter: blur(15px);
+  /* background: rgba(173, 79, 79, 0.1); */
+  background-color: rgba(0,0,0,0.5);
+  /* backdrop-filter: blur(15px); */
   border-radius: 10px;
   overflow: hidden;
-  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+  animation: fadeInRight;
+  animation-duration: 1s;
 }
 
 .dropdown_menu li{
@@ -141,6 +144,7 @@ body{
 }
 .dropdown_menu li a:hover{
   background-color: rgb(246, 216, 162);
+  /* border: 2px solid black; */
 
 }
 .dropdown_menu li a{

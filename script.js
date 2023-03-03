@@ -1,4 +1,3 @@
-
 const menu = document.getElementsByClassName("dropdown_menu")
 const bars = document.getElementsByTagName("i")
 
