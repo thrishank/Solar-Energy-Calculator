@@ -15,41 +15,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="logo"><a href="#">Praveen</a></div>
-        <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Home</a></li>
-        </ul>
-        <a href="#" class="calculator_btn">Calculator</a>
-        <div class="toggle_btn">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-      <div class="dropdown_menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#" class="calculator_btn">Calculator</a></li>
-      </div>
-    </header>
-    <script>
-      const togglebtn = document.querySelector(".toggle_btn");
-      const togglebtnIcon = document.querySelector(".toggle_btn i");
-      const dropdownMenu = document.querySelector(".dropdown_menu");
-
-      togglebtn.onclick = function () {
-        dropdownMenu.classList.toggle("open");
-        const isOpen = dropdownMenu.classList.contains("open");
-
-        togglebtnIcon.classList = isOpen
-          ? "fa-solid fa-xmark"
-          : "fa-solid fa-bars";
-      };
-    </script>
+    <!-- <div class="dropdown_menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#" class="calculator_btn">Calculator</a></li>
+    </div> -->
   </body>
 </html>

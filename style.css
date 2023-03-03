@@ -5,73 +5,6 @@
      padding: 0;
      box-sizing: border-box; 
 }
-
-body{
-  height: 100vh;
-  background-color: #000;
-  background-image: url(https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-li{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-  color: black;
-  font-size: 1.1rem;
-}
-a:hover{
-  color: blue;
-  cursor: pointer;
-}
-header{
-  position: relative;
-  padding: 0 3rem;
-}
-.navbar{
-  width: 100%;
-  height:60px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar .logo a{
-  font-size: 2rem;
-}
-.navbar .links{
-  display: flex;
-  gap: 2rem;
-}
-
-.navbar .toggle_btn{
-  color: black;
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: none;
-}
-.calculator_btn{
-  background-color: green;
-  color: black;
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  transition: scale 0.2 ease;
-}
-
-.calculator_btn:hover{
-  scale: 1.05
-}
-.calculator_btn:active{
-  scale: 0.95
-}
-
 /*dropdown-menu */
 .dropdown_menu{
   display: none;
@@ -80,7 +13,7 @@ header{
   top: 60px;
   height: 0;
   width: 300px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(173, 79, 79, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
@@ -95,29 +28,5 @@ header{
   align-items: center; 
   justify-content: center;
 }
-.dropdown_menu .calculator_btn{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 /* Responsive */
-@media(max-width: 992px){
-  .navbar .links,
-  .navbar .calculator_btn {
-    display: none;
-  }
-  .navbar .toggle_btn{
-    display: block;
-  }
-  .dropdown_menu{
-    display: block;
-  }
-}
-
-@media(max-width: 576px){
-  .dropdown_menu{
-    left: 2rem;
-    width: unset;
-    
-  }
-}
+ 
